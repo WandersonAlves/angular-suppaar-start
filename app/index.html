@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR" ng-app="app">
+
+<head>
+    <meta charset="utf-8">
+    <base href="/">
+    <title>Angular Supppaarrr Start</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Wanderson Alves">
+    <!-- Chrome, Firefox OS, Opera and Vivaldi -->
+    <meta name="theme-color" content="#FF5722">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#FF5722">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#FF5722">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!--Include all css here-->
+    <!-- build:css main.css -->
+    <link rel="stylesheet" href="/res/css/style.css">
+    <!-- endbuild -->
+    <link rel="manifest" href="manifest.json" />
+</head>
+
+<body layout="column" ng-cloak ng-controller="NavigationController as navController">
+    <ui-view></ui-view>
+    <!-- build:js main.js -->
+    <!-- You can add pre bower dependencies here -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/bootstrap/js/collapse.js"></script>
+    <!-- Bower dependencies here -->
+    <!-- endbower -->
+    <!-- Your files here -->
+    <script src="config/app.module.js"></script>
+    <script src="config/app.config.js"></script>
+    <script src="config/app.routes.js"></script>
+    <script src="controllers/navigation.controller.js"></script>
+    <!-- endbuild -->
+    <!-- PWA config -->
+    <script src="push-config.js"></script>
+</body>
+
+</html>
